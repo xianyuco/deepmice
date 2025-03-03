@@ -1,0 +1,32 @@
+name: deepmice_env
+channels:
+  - conda-forge
+  - nvidia
+  - pytorch
+  - dglteam
+  - pyg
+  - intel
+  - defaults
+
+dependencies:
+  - python=3.10
+  - intel::intel-openmp
+  - nvidia::cudatoolkit=11.8.0
+  - nvidia/label/cuda-11.8.0::cuda-nvcc
+  - pytorch::pytorch=1.13.1
+  - dglteam/label/cu118::dgl=2.0.0
+  - conda-forge::dgllife
+  - pyg::pyg
+  - pyg::pytorch-scatter=2.1.1
+  - conda-forge::openbabel=3.1.1
+  - conda-forge::rdkit
+  - conda-forge::jaxlib=0.4.14=*cuda*
+  - conda-forge::jax=0.4.14
+  - sqlite
+  - pip
+  - pip:
+      - Cython
+      - mdanalysis
+      - dm-tree
+      - prody
+      - pytest
